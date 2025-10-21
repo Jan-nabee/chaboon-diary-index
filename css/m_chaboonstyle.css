@@ -1,0 +1,197 @@
+@charset "utf-8";
+
+
+html {font-size: 15px;}
+body {font-size: 1rem;}
+/* 전체페이지가 디바이스가 바뀌었을 때 em이나 rem을 썼을 때 전체적으로 바꿔주는.. */
+
+/* #mainVisual */
+ #mainVisual {
+    height: 70vh;
+    position: relative;
+    margin-bottom: -150px;
+ }
+.main_logo {
+    width: 200px; height: 200px;
+    margin-top: 50px;
+}
+#mainVisual .titleArea {
+    word-break: keep-all;
+    width: 80vw;
+}
+.mainTitle {
+    font-size: 18px;
+}
+.mainText {
+    font-size: 16px;
+}
+.btn_mobile img {
+    display: block;
+    width: 20px;
+    height: 20px;
+    object-fit: contain;
+}
+
+/* 공통영역 */
+h2 {
+    font-size: 24px;
+    /* 기존 pc 44px에서 줄이기 */
+    /* 모바일에서 목록 폰트사이즈 24px 정도면 적당  */
+    letter-spacing: -1px;
+    /* 모바일에서 글자간격 살짝 줄여주면 좋음 */
+}
+h2 + span {
+    display: none;
+}
+section + section {
+    padding: 40px 20px 40px;
+    margin-top: 0px;
+}
+.cardSection {
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px;
+}
+.cardItem {
+    flex: none;   /* 플렉스에 적용된 값 리셋 */
+    width: calc(50% - 10px);
+}
+.cardItem > figure {
+    width: 100%;
+}
+.cardItem > figure > img {
+    max-width: 100%;
+}
+.cardItem .cardText {
+    padding: 15px;
+}
+.cardItem .cardTitle {
+    font-size: 17px;
+}
+/* 버튼영역 */
+.btn {
+    width: 100%;
+}
+.cardItem .text {
+    padding: 0;
+}
+.cardItem figure {
+    margin-bottom: 0;
+}
+/* 헤더 */
+header {
+    margin-top: ;
+    height: 60px;
+    padding: 0 25px;
+}
+header .inner_box {
+    position: relative;
+}
+header .inner_box .logo {
+    position: absolute;
+    top: 60px; left: 0;
+}
+header .inner_box .gnb_area {
+    width: 100vw;
+    background: #ffffffc8;
+    height: 100vh;
+    position: fixed;
+    top: 0; left: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+header .inner_box .gnb_area .gnb {
+    display: flex;
+    flex-direction: column;
+    color: black;
+    width: 100%;
+    gap: 50px;
+    
+}
+header .inner_box .gnb_area .gnb a {
+    color: black;
+}
+.btn_mobile_menu {
+    display: block;
+    position: absolute;
+    top: 70px;
+    right: 0px;
+    width: 30px;
+    height: 30px;
+}
+.btn_mobile_menu img {
+    width: 100%;
+    height: 100%;
+}
+.btnClose {
+    position: absolute;
+    top: 40px; right: 20px;
+    display: block;
+    /* pc버전에서 숨겨둔 요소를 다시 보여주도록 해주는 값 -show의 의미 */
+}
+header .inner_box .util_nav {
+    display: none;
+}
+/* #how use */
+
+
+.viewAll {display: none;}
+
+/* 커뮤니티 배너 */
+#community {
+    background: url(../img/community-mobile_bg.png) no-repeat center/cover;
+    position: relative;
+}
+#community h2 {
+    position: absolute;
+    top: -60px;
+}
+#community .articleArea {
+    margin-left: 0px;
+}
+.articleArea a {
+    width: 100%;
+}
+.articleImg img {
+    display: none; 
+}
+#community .articleTitle {
+    font-size: 1.65rem;
+    line-height: 2.2rem;
+    color: #fff;
+    margin-bottom: 20px;
+}
+#community .articleDesc {
+    color: #fff;
+    font-size: 1rem;
+    width: 45%;
+    word-break: keep-all;
+}
+#community .articleDesc_d {
+    display: none;
+}
+#community .viewAll_m {
+    display: inline-block;
+    width: 150px;
+    text-align: center;
+    background: #f28f6b9e;
+    border: 1px solid #fff;
+    position: absolute;
+    bottom: 30px; right: 30px;
+    height: 35px;
+    line-height: 35px;
+    transition: all 0.3s;
+}
+#community .viewAll_m:hover {
+    background: #f28f6b;
+}
+#community .viewAll_m > span {
+    font-size: 18px;
+    font-weight: 500;
+    color: #ffffff;
+
+}
